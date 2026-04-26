@@ -4,8 +4,8 @@ This project implements a **tool-using AI agent** using **LangGraph + LangChain 
 
 The agent can:
 
-* Perform **math operations** (addition, subtraction, multiplication)
-* Perform **string operations** (uppercase, lowercase, reverse, etc.)
+* Perform **math operations** (addition, subtraction, multiplication, division)
+* Perform **string operations** (uppercase, lowercase, reverse, count etc.)
 * Show **step-by-step solutions for math problems**
 
 ---
@@ -60,7 +60,7 @@ Download: https://ollama.com
 Run the model:
 
 ```bash
-ollama run llama3-groq-tool-us
+ollama run llama3-groq-tool-use
 ```
 
 ---
@@ -74,7 +74,7 @@ config/settings.py
 ```
 
 ```python
-MODEL_NAME = "llama3-groq-tool-us"
+MODEL_NAME = "llama3-groq-tool-use"
 TEMPERATURE = 0
 ```
 
@@ -122,22 +122,12 @@ Final Answer: 8
 
 ---
 
-## 🧪 Debug Tip
-
-Add this in `main.py`:
-
-```python
-print(result["messages"])
-```
-
----
-
 ## 📌 Future Improvements
 
-* Add division & advanced math
-* Support multi-step queries (e.g., "(5+3)*2")
+* Add advanced math
 * Add memory (conversation history)
 * Build REST API (FastAPI)
+* Guardrails for prompt Input and LLM output
 * Add UI (React)
 
 ---
