@@ -94,7 +94,9 @@ python main.py
 Add 5 and 3
 Multiply 4 and 6
 Subtract 10 from 25
+Add 1 and 1, then multiply with 10, then subtract 0.5 from it, and add 4.
 
+Take "Test message string", convert it to uppercase, then reverse it, and finally count the number of words
 Convert "hello" to uppercase
 Reverse "LangGraph"
 ```
