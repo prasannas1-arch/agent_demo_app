@@ -16,7 +16,7 @@ The agent can:
 * LangChain ≥ 1.2.x
 * LangGraph ≥ 1.1.x
 * Ollama (local LLM runtime)
-* Model: `llama3-groq-tool-us`
+* Model: `llama3-groq-tool-use`
 
 ---
 
