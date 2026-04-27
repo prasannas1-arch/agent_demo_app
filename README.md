@@ -35,9 +35,13 @@ project/src
 ├── agents/
 │   └── graph_agent.py     # LangGraph agent definition
 │
+├── docs/prompts
+│   └── system_prompt.py     # System prompt
+│
 ├── docs/
 │   └── assumptions.md     # Project assumptions and Improvements
 │   └── design_approach.md  # Project design decisions
+│
 └── main.py                # CLI entry point
 ```
 
@@ -48,6 +52,10 @@ project/src
 ### 1. Install dependencies
 
 ```bash
+uv sync
+
+OR
+
 pip install langchain langgraph langchain-community
 ```
 
@@ -83,7 +91,7 @@ TEMPERATURE = 0
 ### 4. Run the application
 
 ```bash
-python main.py
+py main.py
 ```
 
 ---
