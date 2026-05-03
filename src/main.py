@@ -1,6 +1,12 @@
 from langchain_core.messages import HumanMessage
 from agents.graph_agent import build_graph
+from langsmith import traceable
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+@traceable
 def run():
     graph = build_graph()
 
